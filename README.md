@@ -4,5 +4,5 @@ This repository provides sample packages used by the MDX updater. To build the s
 
 Example:
 Root Folder
- -- Updater
- -- UpdatePackages
+- Updater
+- UpdatePackages
