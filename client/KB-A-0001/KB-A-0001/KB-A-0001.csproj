@@ -48,7 +48,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" "$(SolutionDir)..\..\..\updater\Release\PackageGenerator.exe" /dll "$(TargetPath)" /out "$(SolutionDir)build\$(TargetName).zip" /data "$(SolutionDir)Files" /xmlout "$(SolutionDir)build\$(TargetName).xml" /config "$(SolutionDir)config\config.xml"</PostBuildEvent>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" "$(SolutionDir)..\..\..\updater\PackageGenerator\bin\Release\PackageGenerator.exe" /dll "$(TargetPath)" /out "$(SolutionDir)build\$(TargetName).zip" /data "$(SolutionDir)Files" /xmlout "$(SolutionDir)build\$(TargetName).xml" /config "$(SolutionDir)config\config.xml"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
